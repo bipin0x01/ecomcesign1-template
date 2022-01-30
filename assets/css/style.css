@@ -1,0 +1,407 @@
+/* Wildcard CSS to make changes to the whole html */
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Navbar */
+  .nav {
+    height: auto;
+    width: 100%;    /* Width of the navbar */
+    background-color: skyblue;              /* Background color of the navbar */
+    position: relative;                 /* Positioning of the navbar */
+    padding: 0px 120px 0px;              /* Padding from left and right */
+    display: grid;
+    text-align: center;     
+  }
+  
+  .nav > .nav-header {
+    width: 100%;
+  }
+  
+  /* Use of Nested Markup for CSS elements  */
+  .nav > .nav-header > .nav-title {
+    font-size: 35px;
+    color: black;
+    padding: 10px 10px 10px 10px;               /* Padding from left and right */
+    font-weight: 500;           /*Make Site title Extra bold */
+
+  }
+
+  
+  .nav > .nav-links {
+    float: right;
+    font-size: 16px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;          /* Remove underline from links */
+    color: #000;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);       /* Add a hover effect to the links */
+  }
+
+  /* Navbar End */
+
+
+
+
+  /* Homepage Banner */
+  .homepage-banner-img{
+      width: 75%;       /* Width of the banner */
+      height: 500px;
+      border-radius: 10px;   
+      margin-left: 50px;
+      box-shadow: black 3px 4px 13px -7px;
+  }
+
+  .homepage-banner{
+      display: flex;        /* Display the banner in a flexbox */
+      margin: 50px;
+  }
+
+  
+  .cat-table{
+    padding: 10px 60px 10px;
+    margin-left: 18px;
+    border-radius: 10px;
+    box-shadow: black 3px 4px 13px -7px;
+  }
+
+  .cat-table > tr > td{
+   font-size: larger;
+  }
+
+
+  /* Products Section */
+  section.products{
+      margin: 60px;
+  }
+
+    div.product-card{
+        width: 300px;
+        margin: 22px;
+        border-radius: 10px;
+        box-shadow: black 3px 4px 13px -7px;
+    }
+
+
+    div.product-card > img{
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    div.product-card > div.product-info{
+        padding: 10px;
+        height: 200px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #f2f2f2;
+    }
+
+    .product-card-info{
+      width: 100%;
+        margin: 0px;
+        padding: 0px 8px 0px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .buy-btn{
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 10px;
+        background-color: #4d4d4d;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 8px;
+    }
+
+    .price-tag{
+        font-size: 22px;
+        margin-top: 5px;
+    }
+
+
+
+
+    /* Products */
+
+    .products-collection{
+        display: flex;
+    }
+
+    
+  .products-page-title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 18px;
+    text-align: center;
+}
+
+
+
+
+  /* Pages */
+
+  section.page{
+      margin: 40px;
+  }
+
+    .page-title{
+        font-size: 30px;
+        font-weight: 600;
+        margin-left: 18px;
+        text-align: center;
+    }
+
+
+
+/* Research Page */
+.research-card{
+    margin: 22px;
+    padding: 20px;
+    background-color: #f2f2f2;
+
+}
+
+
+.research-card-title > img{
+    width: 700px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.research-cards{
+  overflow-x: scroll;
+}
+/* Blog Page */
+
+.blog-container{
+    margin: 40px;
+}
+
+.blog-item{
+    height: auto;
+    margin: 22px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+
+.blog-item-img{
+    width: 80%;
+    height: 500px;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+.blog-item-img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.blog-item-content{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+
+.blog-item-title{
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.blog-item-desc{
+    font-size: 16px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+/* Contact Page */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: skyblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: skyblue;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 20px;
+    margin:20px;
+  }
+
+
+
+  /* Ref Link Button */
+  .ref-link-btn{
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: gray;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .ref-link-btn:hover{
+    background-color: #0275d8;
+    color: #fff;
+  }
+
+  .ref-link-btn > a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+.contact-container{
+  display: flex;
+}
+
+.contact-container > .map> img{
+  width: 800px;
+  padding: 70px;
+}
+
+
+/* Upper Footer */
+
+
+.upper-footer{
+  display: flex;
+  background-color: #4d4d4d;
+  color: whitesmoke;
+  padding-right: 180px;
+  padding-left: 180px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.logo-section{
+  font-size: 30px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-decoration-style:wavy;
+  padding: 80px;
+  margin-right: 150px;
+  border: 2px solid;
+  text-align: center;
+  background-color: #1413134d;
+}
+
+.footer-links{
+  margin-right: 180px;
+}
+
+.footer-links ul li a{
+  text-decoration: none!important;
+  color: white;
+}
+.social-links{
+  margin-right: 150px;
+}
+
+.footer-copyright{
+  color: white;
+  background-color: #4d4d4d;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+/* Home Banners */
+.product-banner img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-banner{
+  margin: 22px;
+  border-radius: 10px;
+  box-shadow: black 3px 4px 13px -7px;
+}
+
+
+
+.hidden{
+  display: none;
+}
+
+#show-more{
+  text-align: center;
+}
+
+#show-more .btn{
+  
+  background-color: #4d4d4d;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+/* Sale Countdown */
+.sale-countdown{
+  margin: 40px;
+  padding: 80px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+
+
+
+
+/* Gototop */
+
+.gototop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gototop > img{
+  height: 40px;
+}
+
+html{
+  scroll-behavior: smooth;
+}

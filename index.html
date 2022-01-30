@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the title of Webpage -->
+    <title>Homepage - VanjaShopping</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<!-- Inline CSS -->
+<style>
+    * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+  }
+
+  footer{       /* Set the footer to fixed position */
+  width: 100%;          /* Set the footer to bottom of the page */
+  left: 0;      /* Position the footer at the bottom of the page */
+  bottom: 0;    /* Position the footer at the bottom of the page */
+  }
+  
+</style>
+<body>
+    <section id="top"></section>
+    <!-- Navbar Start-->
+    <div class="nav">
+        <!-- Use of class and id attributes for CSS elements -->
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="./index.html" style="text-decoration: none;color: white;">VanjaShopping</a>
+          </div>
+        </div>
+        
+        <div class="nav-links">
+          <a href="./products.html">Products</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./research.html">Research</a>
+          <a href="./contact-us.html">Contact Us</a>
+        </div>
+      </div>
+    <!-- Navbar End -->
+      
+    <div class="sale-countdown">
+        <h1>Valientine Sale Starting Soon.</h1>
+    <h2 id="demo"></h2>
+    </div>
+    <!-- Main Content -->
+        
+        <!-- Products -->
+        <div class="homepage-banners" style="display:flex;padding: 0px 80px;">
+            <div class="product-banner" style="width: 800px;height: 400px;object-fit: contain;">
+                <img src="./assets/img/products/harddisk.jpg" alt="" >
+            </div>
+            <div class="product-banner" style="width: 450px;height: 400px;object-fit: contain;">
+                <img src="./assets/img/products/ipad.jpg" alt="" >
+            </div>
+        </div>
+        <div class="homepage-banners" style="display:flex;padding: 0px 80px;">
+            <div class="product-banner" style="width: 300px;height: 300px;">
+                <img src="./assets/img/products/smart tv.png" alt="">
+            </div>
+            <div class="product-banner" style="width: 350px;height: 300px;object-fit: contain;">
+                <img src="./assets/img/products/washing machine.webp" alt="" >
+            </div>
+            <div class="product-banner" style="width: 600px;height: 300px;object-fit: contain;">
+                <img src="./assets/img/products/desktop.jpg" alt="" >
+            </div>
+            
+        </div>
+        <div class="homepage-banners" style="display:flex;padding: 0px 80px;">
+            <div class="product-banner" style="width: 750px;height: 300px;">
+                <img src="./assets/img/products/electric cooker.jpg" alt="" >
+            </div>
+            <div class="product-banner" style="width: 400px;height: 300px;object-fit: contain;">
+                <img src="./assets/img/products/ps5.jfif" alt="" >
+            </div>
+            <div class="product-banner" style="width: 450px;height: 300px;object-fit: contain;">
+                <img src="./assets/img/products/harddisk.jpg" alt="" >
+            </div>
+            
+        </div>
+        
+        
+        <!-- Products End -->
+    <!-- Main Content End -->
+
+    <!-- Footer -->
+    <!-- Footer End -->
+    <footer>
+        <div class="upper-footer">
+            <div class="logo-section">Vanja<br>Shopping</div>
+            <div class="footer-links">
+                <h3>Useful Links</h3>
+                <hr>
+                <ul>
+                    <li> <a href="./products.html">Products</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li> <a href="./research.html">Research</a></li>
+                    <li><a href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <h3>Social Links</h3>
+                <hr>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <hr>
+                Phone no: 9845907401
+                <br>
+                <br>
+                email: Vanjashop@gmail.com
+                <br>
+            </div>
+        </div>
+        <!-- Use of inline CSS -->
+        <hr style="margin:0;">
+        <p class="footer-copyright" style="text-align: center;">Copyright &copy; VanjaShopping 2019-2022<br>
+            <a  class="gototop" href="#top">
+                <img src="./assets/img/misc/up.png" alt="">
+            </a>
+    </footer>
+    <!-- External JS -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Inline JS -->
+    <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 14, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+    </script>
+</body>
+
+</html>
